@@ -1,0 +1,18 @@
+<div class="img-responsive" style="background-image:url('./assests/images/junglePage2.jpg');  background-repeat:no-repeat; background-size:100%;  background-position:center;  height:100vh; margin-top:-20px;">
+<br>
+      <div class="row" style="margin-left:35%;">
+
+        <img ng-src="./assests/images/homepage3.png" id="lion-cave" alt="home page chat box"  ng-hide="show==1"/>
+          <img ng-src="./assests/images/homepage4.png" id="lion-cave" alt="home page chat box" ng-show="show==1"/>
+          <img class="progressPointer" src="./assests/images/progressPointer.png" ng-hide="show==1" alt="">
+
+      </div>
+      <div class="row" style="margin-left:35%;">
+        <img ng-src="./assests/images/lionMascot.png" id="lionImg" alt="Lion Image" />
+      </div><br><br>
+      <div class="row" style="margin-left:35%;">
+        <button id="back_button" style="bottom:15px; position:fixed; left:20px;" type="button" name="button" ui-sref="welcome">BACK</button>
+        <button id="next_button" style="bottom:15px;  left:960px; position:fixed;" type="button" name="button" ng-click="show = 1" ng-hide="show==1">NEXT</button>
+        <button id="next_button" style="bottom:15px;  left:960px; position:fixed;" type="button" name="button"  ng-show="show==1" ui-sref="learndance">NEXT</button>
+      </div>
+    </div>

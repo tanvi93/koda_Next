@@ -1,0 +1,22 @@
+app.controller('dancinganimalsController',function($rootScope,$scope,progressService){
+
+  $(document).ready(function () {
+
+    $("#myProgress,#myBar").show();
+    setTimeout(function(){
+ $('#rowforChat,#back_button,#next_button,.danceVideo').show();
+},1450);
+
+});
+$rootScope.progress= progressService.lionDance;
+$scope.correctgifUrl="./assests/images/correct_dancing_lion.gif";
+$scope.wronggifUrl="./assests/images/wrong_dancing_lion.gif";
+   $scope.isclicked = false;
+   $(".button").click(function() {
+  $('.danceVideo').toggleClass('correctdanceVideo');
+   $(".correctdanceText").fadeIn(3000);
+
+   $rootScope.progress= progressService.lionDancecont;
+});
+
+});
