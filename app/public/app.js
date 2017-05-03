@@ -156,6 +156,11 @@ $stateProvider
       templateUrl : './templates/algorithm.html',
       controller: 'algorithmCtrl'
   })
+  .state("game2elements", {
+     url: '/game_2_elements',
+      templateUrl : './templates/game_2_elements.html',
+      controller: 'game2elementsCtrl'
+  })
   .state("game2algorithm", {
      url: '/game_2_algorithm',
       templateUrl : './templates/game_2_algorithm.html',
