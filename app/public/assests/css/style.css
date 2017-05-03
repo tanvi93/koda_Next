@@ -761,13 +761,16 @@ body{
     }
     @keyframes moveGiff {
       100%{
-     transform: translateX(537px);
+     transform: translateX(504px);
       }
     }
 
     #speechBubblechat {
-        width: 415px;
+        width: 410px;
         height: 308px;
+        margin-left: 70px;
+        /*padding-right: 5px;*/
+
         /*position: absolute;*/
     }
 
@@ -1754,4 +1757,164 @@ margin-left: 80px;
   position: relative;
   position: relative;
   z-index: 2;
+}
+
+/*css for game 2 element*/
+
+.bgforGame2 {
+    width: 970px;
+    height: 686px;
+    border: 8px solid white;
+}
+
+.gameElement {
+    width: 418px;
+    height: 698px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+#gameElementHeading {
+    background-color: rgba(52, 73, 94, 1);
+    border: 1px solid black;
+    width: 395px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Julee';
+    font-weight: 900;
+    font-size: 35px;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 10px 5px grey;
+}
+
+.characterBox {
+    width: 395px;
+    height: 207px;
+    background-color: rgba(204, 204, 204, 1);
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#charText {
+    width: 395px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 204, 0, 1);
+    font-family: 'Julee';
+    font-weight: 700;
+    font-size: 25px;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+}
+
+.circle {
+    width: 113px;
+    height: 113px;
+    border: 1px solid #333333;
+    border-radius: 100px;
+    background-color: #696969;
+    box-shadow: inset 0px 5px 20px -5px rgba(0, 0, 0, 1);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.circleBg {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #333333;
+    border-radius: 100px;
+    background-color: #696969;
+    box-shadow: inset 0px 5px 20px -5px rgba(0, 0, 0, 1);
+    display: inline-block;
+    margin-left: 130px;
+}
+.ruleBox{
+  width: 358px;
+    height: 55px;
+    border: 1px solid #333333;
+    border-radius: 50px;
+    background-color: #696969;
+    box-shadow: inset 0px 5px 20px -5px rgba(0, 0, 0, 1);
+    display: inline-block;
+    margin-left: 10px;
+
+}
+#textInBox{
+  color:black;
+font-family: "Julee"
+   font-size:13px;
+   font-weight:700;
+   font-style: normal;
+}
+
+
+#rulesOfgame2element{
+  border:1px solid grey;
+  background-color: white;
+  width: 975px;
+height: 692px;
+}
+
+.ruleContainer{
+  width: 649px;
+    height: 65px;
+        border-radius: 325px;
+    background-color: rgba(255, 153, 51, 1);
+    margin-top: 60px;
+    margin-left: 160px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Julee';
+      font-weight: 700;
+      font-style: normal;
+      font-size: 20px;
+      color: white;
+}
+
+#scoringRulePlaced{
+  width: 346px;
+    height: 40px;
+    position: fixed;
+    margin-top: 300px;
+    margin-left: 15px;
+    padding-top:5px;
+}
+
+#gameOverRulePlaced{
+  width: 346px;
+    height: 40px;
+    position: fixed;
+    margin-top: 360px;
+    margin-left: 15px;
+    padding-top:5px;
+}
+
+#game2elementNext{
+  width: 408px;
+  height: 418px;
+  margin-top: 280px;
+  margin-left:  1000px;
+  position: fixed;
+  animation: Giff 2s forwards;
+}
+
+@keyframes Giff {
+  100%{
+  transform: translateX(-700px);
+  }
+}
+
+#error_msg_on_apple{
+  margin-top: -380px;
+  margin-left: 500px;
+  position: fixed;
 }

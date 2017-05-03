@@ -41,6 +41,7 @@
                 <img class="bgforGame2" src="./assests/images/jungleBG.png" ng-click="moveBg()" alt="">
                 <img src="./assests/images/monkey.png" id="monkey" ng-click="moveMonkey()" style="margin-top:-1080px; margin-left:440px;" alt="">
                 <img src="./assests/images/apple.png" id="apple" ng-click="moveApple()" style="margin-top:-680px; margin-left:470px;" alt="">
+                <!-- <div  id="error_msg_on_apple"><img src="./assests/images/error_msg_on_apple.png"></div> -->
                 <img src="./assests/images/cap.png" id="cap" ng-click="moveCap()" style="width: 130px; height: 66px; margin-top:-240px; margin-left:580px;" alt="">
             </div>
             <div ng-show="isBg" id="rulesOfgame2element">
@@ -51,7 +52,7 @@
               <p class="ruleContainer">No fruits are smashed</p>
             </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3" style="margin-top:-10px; text-align:right; margin-left:-50px;" ng-hide="isgameOverRule">
+        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3" style="margin-top:-10px; text-align:right; margin-left:-30px;" ng-hide="isgameOverRule">
             <div class="row"><img id="speechBubblechat" src="./assests/images/chat_game2elements.png" ng-hide="isCap" alt=""></div>
             <div class="row"><img id="speechBubblechat" class="cap" src="./assests/images/chat_element2.png" ng-show="isCap"  alt=""></div>
             <div class="row"><img id="speechBubblechat" class="chat_monkey" src="./assests/images/chat_element3.png" ng-show="isMonkey"  alt=""></div>
