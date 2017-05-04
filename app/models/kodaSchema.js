@@ -42,13 +42,13 @@ var kodaSchema = new BaseSchema({
       // },
       firstname:{
        type:String,
-       unique:true,
+      //  unique:true,
        required:true,
        trim:true
      },
      lastname:{
        type:String,
-       unique:true,
+      //  unique:true,
        required:true,
        trim:true
      }
