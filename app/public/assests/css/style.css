@@ -1334,18 +1334,18 @@ max-height: 30%;
   color:white;
 }
 .dashboard-Achievement-Section{
-  width:1381px;
+  width:97.5%;
   height:200px;
   background-color:  rgba(13, 191, 102, 1);
   border-radius: 28px;
   margin-left: 2%;
-  margin-top: 51%;
+  margin-top: 4%;
   position: absolute;
   border:1px solid rgba(121, 121, 121, 1);
 }
 #dashboard-laurel-image{
     margin-left: 33%;
-    margin-top: -3%;
+    margin-top: -2.4%;
 }
 #dashboard-ninja-badge,#dashboard-savvy-badge,#locked-badge{
   margin-left:3%;
@@ -1356,52 +1356,112 @@ max-height: 30%;
 }
 .lion-dashboard-details{
   width:423px;
-  height:770px;
-  position: absolute;
+  height:570px;
   background-color:rgba(247, 247, 247, 1);
   border-radius: 26px;
 }
 .dashboard-Detail-Section{
   float:right;
   margin-right: 5%;
+  margin-top: 4%;
 }
 .lion-dashboard-sqaure-details{
-  width:350px;
-  height:350px;
-  background-color: lightgreen;
+  width:260px;
+  height:260px;
   display: block;
-  margin-top: 50%;
-  margin-left: 8.5%;
+  padding-left: 50%;
+  padding-top: -50%;
+  margin-left: -17%;
+  transform: rotate(45deg);
 }
 .lion-dashboard-sub-square-concepts{
-  height:165px;
-  width:165px;
-  box-shadow: 0px 5px 3px #888888;
+  height:115px;
+  width:115px;
+  box-shadow: 5px 0px 3px #888888;
   float: right;
   background-color: #f0656e;
   border:none;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .lion-dashboard-sub-square-badges{
-  height:165px;
-  width:165px;
-  box-shadow: 0px 5px 3px #888888;
+  height:115px;
+  width:115px;
+  box-shadow: 5px 0px 3px #888888;
   background-color: #f7c859;
   border:none;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 .lion-dashboard-sub-square-blocks{
-  height:165px;
-  width:165px;
+  height:115px;
+  width:115px;
   float:right;
-  box-shadow: 0px 5px 3px #888888;
+  box-shadow: 5px 0px 3px #888888;
   background-color: #8ad4cf;
   border:none;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 .lion-dashboard-sub-square-duration{
-  height:165px;
-  width:165px;
-  box-shadow: 0px 5px 3px #888888;
+  height:115px;
+  width:115px;
+  box-shadow: 5px 0px 3px #888888;
   background-color: #d8e364;
   border:none;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.duration-text,.badge-text,.concept-text,.block-text{
+  transform: rotate(315deg);
+}
+#dashboard-inner-text{
+  font-family:helvetica-bold,"Helvetica Bold", Helvetica;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  color: rgb(78, 57, 113);
+}
+#dashboard-inner-text-concepts{
+  font-size: 14px;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  padding-left: 15px;
+}
+#dashboard-inner-text-badges{
+  font-size: 14px;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  padding-left: 25px;
+}
+#dashboard-inner-text-blocks{
+  font-size: 14px;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  padding-left: 28px;
+}
+#dashboard-inner-text-duration{
+  font-size: 14px;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  padding-left:20px;
+}
+#dashboard-ninja-badge{
+  margin-left: 6%;
+}
+#dashboard-savvy-badge{
+  margin-left: 4%;
+}
+#locked-badge{
+  margin-left: 4%;
 }
 
 /*common giraffe page preview section*/
@@ -1411,6 +1471,9 @@ max-height: 30%;
 }
 
 /*welcome-giraffe Page*/
+#giraffe-mid-section{
+  margin-left: -9%;
+}
 
 #welcome-giraffe-back{
   height:72px;
@@ -1442,7 +1505,7 @@ max-height: 30%;
   margin-left: 4%;
 }
 #welcome-giraffe-chat{
-  margin-top: -6%;
+  margin-top: -7%;
   margin-left:15%;
 }
 #welcome-giraffe-lion-mascot{
@@ -1462,6 +1525,7 @@ max-height: 30%;
   float: right;
   margin-right: 18%;
   margin-top: 11%;
+  /*use animation tag here to make it more right*/
 }
 #giraffe-intro-back{
   height:72px;
@@ -1514,12 +1578,12 @@ max-height: 30%;
   width:580px;
   height:550px;
   margin-left: 36%;
-  margin-top: 43%;
+  margin-top: 42%;
 }
 #giraffe-intro1-giraffe{
   height:408px;
   width:418px;
-  margin-left: 35.5%;
+  margin-left: 38%;
 }
 .giraffe-intro1-button{
   margin-left: 35%;
