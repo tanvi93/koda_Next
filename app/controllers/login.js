@@ -7,8 +7,7 @@ var com = new common();
 router.post('/login', function(req, res) {
   try {
         data={
-          firstname:req.body.firstName,
-          lastname:req.body.lastName
+          Name:req.body.Name
           // username:"",
           // userEmailAddress:"",
           // parentEmailAddress:'',

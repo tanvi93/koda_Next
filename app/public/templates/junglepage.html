@@ -1,12 +1,22 @@
 <div class="img-responsive" style="background-image:url('./assests/images/jungle_bg.jpg'); background-repeat:no-repeat; background-size:100%;  background-position:center;  height:100vh; margin-top:-20px;">
         <div class="homepage-message">
-          <img ng-src="./assests/images/homepage1.png" id="homepage-chat" alt="home page chat box" ng-hide="show==1">
-          <img ng-src="./assests/images/homepage2.png" id="homepage-chat" alt="home page chat box" ng-show="show==1">
+          <img ng-src="./assests/images/homepage1.png" id="homepage-chat" alt="home page chat box" ng-hide="isClicked">
+          <img ng-src="./assests/images/chat_welcome1.png" id="homepage-chat" class="previousChat" alt="home page chat box" ng-show="isClicked">
+          <div class="nextChat" style="display:none;">
+            <img ng-src="./assests/images/chat_bubble.png" id="homepage-chat" class="chatBox" alt="home page chat box"  >
+            <p id="textInChat">Hi,{{Data}}!Can you help us <br> with the preparations for <br> the carnival?</p>
+          </div>
         </div>
+        <div id="input_container"  style="display:none;">
+          <img id="leaf_img"  src="./assests/images/leaf.png" alt="" />
+    <input type="text" class="inputBox" ng-model="Name" name="firstName" id="firstName" placeholder="Enter your name here" required />
+    <img src="./assests/images/arrow_button.png" id="input_img" ng-click="welcome()">
+    <img id="inputError" src="./assests/images/input_error.png" style="display:none;" alt="" />
+</div>
+
         <div class="bottom">
-          <button id="back_button" style="bottom:15px; position:fixed; left:20px;" type="button" name="button" ng-show="show==1">BACK</button>
-          <button id="next_button" style="bottom:15px;  left:960px; position:fixed;" type="button" name="button"  ng-show="show==1" ui-sref="helpLion">NEXT</button>
-          <button id="next_button" style="bottom:15px;  left:960px; position:fixed;" type="button" name="button" ng-click="show = 1" ng-hide="show==1">NEXT</button>
+          <button id="welcome_button"  type="button" name="button" ng-click="clicked()" ng-hide="isClicked">SAY HELLO!</button>
+          <button id="welcome_button" style="  display:none;" class="button" type="button" name="button" ui-sref="helpLion"  ng-show="clicked">SURE!</button>
         </div>
 
     </div>

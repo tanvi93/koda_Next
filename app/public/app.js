@@ -15,13 +15,13 @@ var app = angular.module("koda",["ui.router",'ngDraggable']);
 
 app.config(function($stateProvider,$urlRouterProvider,$qProvider) {
 $qProvider.errorOnUnhandledRejections(false);
-$urlRouterProvider.otherwise('login');
+$urlRouterProvider.otherwise('welcome');
 $stateProvider
-.state("login", {
-   url: '/login',
-    templateUrl : './templates/login.html',
-    controller: 'loginController'
-})
+// .state("login", {
+//    url: '/login',
+//     templateUrl : './templates/login.html',
+//     controller: 'loginController'
+// })
 .state('welcomeUser',{
   url:'/welcomeUser',
   templateUrl : './templates/welcomeUser.html',
