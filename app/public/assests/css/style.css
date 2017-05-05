@@ -81,8 +81,13 @@ z-index: 3;
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
-    margin-left: 58%;
-    margin-top: -220px;
+
+    text-align: center;
+}
+
+.textHome{
+  margin-left: 580px;
+  margin-top: -200px;
 }
 
 .chatBox{
@@ -124,6 +129,16 @@ z-index: 3;
      position: fixed;
 }
 
+/*css for help the lion page*/
+#helpLionChat{
+  margin-top: 100px;
+  width:480px;
+}
+
+.textHelpLion{
+  margin-left: -1300px;
+  margin-top: -250px;
+}
 /*navbar css*/
 
 .navbar-right {
@@ -164,7 +179,7 @@ z-index: 3;
     font-size: 45px;
     color: white;
     font-weight:600;
-    margin-left: -20px;
+    margin-left: 10px;
     margin-top: 5px;
 }
 
@@ -424,22 +439,22 @@ transform: translateX(-700px);
 
 /*welcome page css*/
 .progressPointer{
-  margin-top: -200px;
-  margin-left: 340px;
+  margin-top: -900px;
+    margin-left: 1440px;
   animation: pointer 2s forwards;
 }
 
 @keyframes pointer {
   0%{
     opacity: 0;
-    margin-top: 0px;
-      margin-left: 340px;
+    margin-top: -900px;
+      margin-left: 1440px;
   }
 
   100%{
     opacity: 1;
-    margin-top: -230px;
-    margin-left: 340px;
+    margin-top: -1750px;
+      margin-left: 1440px;
   }
 }
 
@@ -835,7 +850,7 @@ body{
 
     .movingGiff{
       margin-top:308px;
-        animation:  moveGiff 2s forwards;
+        animation:  moveGiff 1s forwards;
     }
     @keyframes moveGiff {
       100%{
@@ -1004,24 +1019,16 @@ height: 254px;
 }
 #chartext2{
   position: relative;
-  left: 240px;
+  left: 50px;
   top: 120px;
   font-family: 'Julee';
   font-weight: 700;
   font-style: normal;
   font-size: 25px;
   -webkit-animation: para1 7s;
+  text-align: center;
 }
-#chartext3{
-  position: relative;
-  left: 300px;
-  top: 100px;
-  font-family: 'Julee';
-  font-weight: 700;
-  font-style: normal;
-  font-size: 25px;
-  -webkit-animation: para1 8s;
-}
+
     #circle_giff {
         width: 250px;
         height: 250px;
@@ -1097,9 +1104,9 @@ height: 254px;
         position: relative;
         left: 220px;
         top: 330px;
-        -webkit-animation-delay: 3s;
+        -webkit-animation-delay: 4s;
         animation: bubble 1s forwards;
-        animation-delay: 3s;
+        animation-delay: 4s;
     }
     @keyframes bubble {
         0% {

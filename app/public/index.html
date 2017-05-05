@@ -23,8 +23,8 @@
   <nav class="navbar navbar-inverse">
       <div class="navbar-header">
           <ul class="nav navbar-nav">
-              <li class="active">
-                  <a href="#" class="glyphicon glyphicon-menu-hamburger"></a>
+              <li class="active" >
+                  <!-- <a href="#" class="glyphicon glyphicon-menu-hamburger"></a> -->
               </li>
               <li><a ui-sref="lionDanceDashboard" id="appName">Koda</a></li>
           </ul>
@@ -42,7 +42,7 @@
             </li>
             <!-- <li id="myProgress"><div id="myBar" ng-model="progress" ng-show="progress='undefined'" style="width:{{progress}}%"></div></li> -->
               <!-- <li><a href="#"><span  class="glyphicon glyphicon-triangle-bottom"></span> </a></li> -->
-              <li><a href="#" id="kidName">{{Data}}</a></li>
+              <li><a href="#" id="kidName">{{Data | capitalize}}</a></li>
               <!-- <li><img id="kidImg" src="./assests/images/img.png" alt=""></li> -->
           </ul>
       </div>
@@ -93,4 +93,5 @@
 <script src="./controllers/game_2_elements.js"></script>
 <script src="./directives/modal.js"></script>
 <script src="./services/progress.js"></script>
+<script src="./services/filter.js"></script>
 </html>
