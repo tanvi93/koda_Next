@@ -151,10 +151,25 @@ $stateProvider
       templateUrl : './templates/selectchar.html',
       controller: 'selectcharController'
   })
+  .state('playInstruction',{
+    url:'/gameInstruction',
+    templateUrl:'./templates/giraffePlayInstruction.html',
+    controller: 'giraffePlayInstructionCtrl'
+  })
   .state("algorithm", {
      url: '/algorithm',
       templateUrl : './templates/algorithm.html',
       controller: 'algorithmCtrl'
+  })
+  .state("giraffePlay",{
+    url:'/giraffePlay',
+    templateUrl:'./templates/giraffePlay.html',
+    controller:'giraffePlayCtrl'
+  })
+  .state("giraffePlay1",{
+    url:'/giraffePlay1',
+    templateUrl:'./templates/giraffePlay1.html',
+    controller:'giraffePlay1Ctrl'
   })
   .state("game2elements", {
      url: '/game_2_elements',

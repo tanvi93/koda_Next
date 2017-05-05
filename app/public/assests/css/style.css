@@ -160,6 +160,11 @@ z-index: 3;
     font-size: 40px;
     background-color: inherit;
 }
+.mascotHead{
+  display: inline-flex;
+  margin-left: 62%;
+  margin-top: 1%;
+}
 #kidName {
   font-family: 'Julee';
   font-weight: 700;
@@ -200,9 +205,12 @@ z-index: 3;
   width: 200px;
   background-color: #ddd;
   margin-left:-300px;
-  margin-top: 10px;
+  margin-top: -30px;
 }
-
+.mascotHead{
+  margin-left: 64%;
+  margin-top: 1%;
+}
 #myBar {
   /*width: 100%;*/
   height: 30px;
@@ -1191,19 +1199,23 @@ margin-top: 0;
 color: #333;
 font-family: Tahoma, Arial, sans-serif;
 }
-#lion-achievement-sequence:hover{
+#lion-achievement-sequence{
   width:240px;
   height:250px;
-}
-#lion-achievement-animation:hover{
-  width:236px;
-  height:250px;
-}
-#lion-achievement-sequence{
-  margin-top: 10%;
+  margin-top:-15px;
 }
 #lion-achievement-animation{
-  margin-top: 10%;
+  width:240px;
+  height:250px;
+  margin-top:-15px;
+}
+#lion-achievement-text{
+  font-family: 'Julee';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  color: #9933CC;
+  /*text-decoration: none;*/
 }
 .lion-achievement-popup .lion-achievement-close {
 position: absolute;
@@ -1240,17 +1252,19 @@ max-height: 30%;
   margin-right: 20px;
 }
 #lion-continuebutton {
-    width: 600px;
-    height: 80px;
-    background: green;
+    width: 532px;
+    height: 72px;
+    background: rgba(51, 153, 0, 1);
+    font-family: 'Julee';
+    font-weight: 700;
     border: 2px solid rgba(255, 255, 255, 1);
     text-align: center;
     color: white;
     border-radius: 10px;
     font-size: 24px;
     opacity: 0.2;
-    margin-top: 3%;
-    margin-left: 33%;;
+    margin-top: 9%;
+    margin-left: 35%;;
     -webkit-animation-name: lionbadge;
     -webkit-animation-duration: 1s;
     -webkit-animation-iteration-count: infinite;
@@ -1260,9 +1274,9 @@ max-height: 30%;
   font-size: 28px;
 }
 @-webkit-keyframes lionbadge {
-    from {background-color: #749a02;-webkit-box-shadow: 0 0 9px #333;opacity: 1;border: 2px solid rgba(255, 255, 255, 1);}
-    50% {background-color: #91bd09;-webkit-box-shadow: 0 0 18px #91bd09;opacity: 1;border: 2px solid rgba(255, 255, 255, 1);}
-    to {background-color: #749a02;-webkit-box-shadow: 0 0 9px #333;opacity: 1;border: 2px solid rgba(255, 255, 255, 1);}
+    from {background-color: rgba(51, 153, 0, 1);-webkit-box-shadow: 0 0 9px #333;opacity: 1;border: 2px solid rgba(255, 255, 255, 1);}
+    50% {background-color: rgb(75, 201, 8, 1);-webkit-box-shadow: 0 0 18px #91bd09;opacity: 1;border: 2px solid rgba(255, 255, 255, 1);}
+    to {background-color: rgba(51, 153, 0, 1);-webkit-box-shadow: 0 0 9px #333;opacity: 1;border: 2px solid rgba(255, 255, 255, 1);}
 }
 .lion-options{
   margin-left: 700px;;
@@ -1438,9 +1452,10 @@ max-height: 30%;
   border-radius: 26px;
 }
 .dashboard-Detail-Section{
-  float:right;
+  /*float:right;*/
   margin-right: 5%;
   margin-top: 4%;
+  margin-left: 238%;
 }
 .lion-dashboard-sqaure-details{
   width:260px;
