@@ -147,6 +147,8 @@ z-index: 3;
 }
 .mascotHead{
   display: inline-flex;
+  margin-left: 62%;
+  margin-top: 1%;
 }
 #kidName {
   font-family: 'Julee';
@@ -1443,9 +1445,10 @@ max-height: 30%;
   border-radius: 26px;
 }
 .dashboard-Detail-Section{
-  float:right;
+  /*float:right;*/
   margin-right: 5%;
   margin-top: 4%;
+  margin-left: 238%;
 }
 .lion-dashboard-sqaure-details{
   width:260px;
