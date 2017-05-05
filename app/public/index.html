@@ -29,9 +29,17 @@
               <li><a ui-sref="lionDanceDashboard" id="appName">Koda</a></li>
           </ul>
       </div>
+          <div class="mascotHead">
+              <li>
+                <img src="./assests/images/giraffeHead.png" alt="giraffe head image"/>
+                <img src="./assests/images/lionHead.png" alt="lion head image" />
+              </li>
+        </div>
       <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li id="myProgress"><div id="myBar"  style="width:{{progress}}%"></div></li>
+            <li id="myProgress">
+              <div id="myBar"  style="width:{{progress}}%;"></div>
+            </li>
             <!-- <li id="myProgress"><div id="myBar" ng-model="progress" ng-show="progress='undefined'" style="width:{{progress}}%"></div></li> -->
               <!-- <li><a href="#"><span  class="glyphicon glyphicon-triangle-bottom"></span> </a></li> -->
               <li><a href="#" id="kidName">{{Data}}</a></li>
@@ -71,6 +79,8 @@
 <script src="./controllers/giraffeIntro1.js" charset="utf-8"></script>
 <script src="./controllers/giraffeGame.js" charset="utf-8"></script>
 <script src="./controllers/giraffeGame1.js" charset="utf-8"></script>
+<script src="./controllers/giraffePlay.js" charset="utf-8"></script>
+<script src="./controllers/giraffePlay1.js" charset="utf-8"></script>
 <script src="./controllers/giraffeThnxNote.js" charset="utf-8"></script>
 <script src="./controllers/selectchar.js"></script>
 <script src="./controllers/chartypes.js"></script>
