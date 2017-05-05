@@ -40,18 +40,18 @@ var kodaSchema = new BaseSchema({
       //   match: new RegExp(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d][A-Za-z\d!@#$%^&*()_+]{7,19}$/),
       //   trim:true
       // },
-      firstname:{
+      Name:{
        type:String,
-       unique:true,
-       required:true,
-       trim:true
-     },
-     lastname:{
-       type:String,
-       unique:true,
+      //  unique:true,
        required:true,
        trim:true
      }
+    //  lastname:{
+    //    type:String,
+    //   //  unique:true,
+    //    required:true,
+    //    trim:true
+    //  }
      //,
     //   personalDetail:[{
     //    birthDate:{

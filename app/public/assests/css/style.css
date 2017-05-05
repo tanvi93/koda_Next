@@ -52,7 +52,77 @@ font-size: 24px;
     margin-left: 320px;
       margin-top: 200px;
 }
+/*css for welcome_to_the_show*/
+.inputBox{
+  width: 423px;
+height: 64px;
+margin-left: 550px;
+margin-top: 120px;
+font-size:28px;
+font-family: "Julee";
+position: relative;
+z-index: 2;
 
+}
+
+#input_img{
+  margin-left: -70px;
+  width: 52px;
+height: 56px;
+margin-top: -5px;
+position: relative;
+z-index: 3;
+}
+
+#textInChat{
+  position: relative;
+  z-index: 2;
+  font-family: "Julee";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 58%;
+    margin-top: -220px;
+}
+
+.chatBox{
+  position: relative;
+  z-index: 1;
+}
+
+#leaf_img{
+  width: 679px;
+  height: 304px;
+  margin-left: 420px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+#inputError{
+  width: 250px;
+  height: 60px;
+  margin-top: 120px;
+  margin-left: -250px;
+  position:relative;
+  z-index: 1;
+}
+
+#welcome_button{
+  width: 140px;
+  height: 72px;
+    font-family: 'Julee';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+    border-radius: 8px;
+    background-color: rgba(51, 153, 0, 1);
+    color: white;
+    margin-left: 20px;
+    bottom:15px;
+     left:800px;
+     position: fixed;
+}
 
 /*navbar css*/
 
@@ -105,7 +175,7 @@ font-size: 24px;
 @keyframes moveLion {
 
   100%{
- transform: translateX(410px);
+ transform: translateX(680px);
 
   }
 }
@@ -142,7 +212,7 @@ font-size: 24px;
 #rowforLion{
   margin-top:10px;
   float:right;
-   padding-right:15px;
+   padding-right:30px;
 }
 
 .flipbookLion{
@@ -214,7 +284,7 @@ margin-top: 140px;
     width: 430px;
     height: 500px;
     margin-top: 260px;
-    margin-left: -60px;
+    margin-left: 250px;
     border: 5px solid green;
 }
 
@@ -820,7 +890,7 @@ height: 170px;
       position: relative;
       left: 265px;
       top: 390px;
-      animation: rules1 2s forwards;
+      animation: rules1 1s forwards;
       -webkit-animation-delay: 1s;
       animation-delay: 1s;
 
@@ -846,7 +916,7 @@ height: 170px;
         font-weight: 700;
         font-style: normal;
         font-size: 25px;
-        -webkit-animation: para1 7s;
+        -webkit-animation: para1 5s;
     }
 
     #rules2 {
@@ -855,9 +925,9 @@ height: 170px;
         position: relative;
         left: -200px;
         top: 380px;
-        -webkit-animation-delay: 4s;
-        animation: rules2 2s forwards;
-        animation-delay: 4s;
+        -webkit-animation-delay: 3s;
+        animation: rules2 1s forwards;
+        animation-delay: 3s;
     }
 
     @keyframes rules2 {
@@ -880,7 +950,7 @@ height: 170px;
         font-weight: 700;
         font-style: normal;
         font-size: 25px;
-        -webkit-animation: para1 12s;
+        -webkit-animation: para1 10s;
     }
 
 #bgHolder{
@@ -899,7 +969,7 @@ height: 254px;
   left: 370px;
   top: 360px;
   /*z-index: 2;*/
-  animation: charImg 2s forwards;
+  animation: charImg 1s forwards;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
@@ -922,7 +992,7 @@ height: 254px;
     font-weight: 700;
     font-style: normal;
     font-size: 25px;
-    -webkit-animation: para1 7s;
+    -webkit-animation: para1 5s;
 }
 #chartext2{
   position: relative;
@@ -932,7 +1002,7 @@ height: 254px;
   font-weight: 700;
   font-style: normal;
   font-size: 25px;
-  -webkit-animation: para1 9s;
+  -webkit-animation: para1 7s;
 }
 #chartext3{
   position: relative;
@@ -942,7 +1012,7 @@ height: 254px;
   font-weight: 700;
   font-style: normal;
   font-size: 25px;
-  -webkit-animation: para1 10s;
+  -webkit-animation: para1 8s;
 }
     #circle_giff {
         width: 250px;
@@ -951,7 +1021,7 @@ height: 254px;
         left: 250px;
         top: 330px;
         /*z-index: 2;*/
-        animation: example 2s forwards;
+        animation: example 1s forwards;
         -webkit-animation-delay: 1s;
         animation-delay: 1s;
     }
@@ -1002,7 +1072,7 @@ height: 254px;
         font-weight: 700;
         font-style: normal;
         font-size: 25px;
-        -webkit-animation: para1 11s;
+        -webkit-animation: para1 10s;
     }
     @keyframes text {
         0% {
@@ -1019,9 +1089,9 @@ height: 254px;
         position: relative;
         left: 220px;
         top: 330px;
-        -webkit-animation-delay: 4s;
-        animation: bubble 2s forwards;
-        animation-delay: 4s;
+        -webkit-animation-delay: 3s;
+        animation: bubble 1s forwards;
+        animation-delay: 3s;
     }
     @keyframes bubble {
         0% {
@@ -1042,7 +1112,7 @@ height: 254px;
         font-weight: 700;
         font-style: normal;
         font-size: 25px;
-        -webkit-animation: para1 15s;
+        -webkit-animation: para1 14s;
     }
     #para4 {
       width:600px;
@@ -1053,7 +1123,7 @@ height: 254px;
         font-weight: 700;
         font-style: normal;
         font-size: 25px;
-        -webkit-animation: para1 17s;
+        -webkit-animation: para1 15s;
     }
 
 
@@ -1893,6 +1963,7 @@ height: 692px;
     margin-top: 300px;
     margin-left: 15px;
     padding-top:5px;
+    font-size: 18px;
 }
 
 #gameOverRulePlaced{

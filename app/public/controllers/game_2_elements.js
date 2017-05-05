@@ -1,5 +1,6 @@
-app.controller('game2elementsCtrl', function($scope) {
+app.controller('game2elementsCtrl', function($scope,$state) {
 $('.disabled').prop('disabled',true);
+
 $scope.moveCap = function() {
       $scope.isCap = true;
         $('#cap').css("opacity", "0.5");
@@ -22,20 +23,20 @@ $scope.moveCap = function() {
         }
     }
 
-
     $scope.scoringRule = function() {
         $scope.isScoringRule = true;
         $('.chat_bg').hide();
         $('#scoringRule').css("opacity", "0.5");
         $scope.gameOverRule = function() {
             $scope.isgameOverRule = true;
-            setTimeout(function() {
-                $('.chat').show();
-                $('.disabled').prop('disabled',false);
+              $state.go('game2elementsNext');
                 $('.disabled').removeClass('disabled');
-            }, 1500)
-
         }
     }
+
+setTimeout(function(){
+  $('.chat').show();
+
+},1500)
 
 })

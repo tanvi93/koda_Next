@@ -13,9 +13,6 @@ $scope.correctgifUrl="./assests/images/correct_dancing_lion.gif";
 $scope.wronggifUrl="./assests/images/wrong_dancing_lion.gif";
    $scope.isclicked = false;
    $(".button").click(function() {
-  $('.danceVideo').toggleClass('correctdanceVideo');
-   $(".correctdanceText").fadeIn(3000);
-
    $rootScope.progress= progressService.lionDancecont;
 });
 
