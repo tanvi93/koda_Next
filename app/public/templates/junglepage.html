@@ -1,10 +1,18 @@
 <div class="img-responsive" style="background-image:url('./assests/images/jungle_bg.jpg'); background-repeat:no-repeat; background-size:100%;  background-position:center;  height:100vh; margin-top:-20px;">
         <div class="homepage-message">
-          <img ng-src="./assests/images/homepage1.png" id="homepage-chat" alt="home page chat box" ng-hide="isClicked">
-          <img ng-src="./assests/images/chat_welcome1.png" id="homepage-chat" class="previousChat" alt="home page chat box" ng-show="isClicked">
+           <!-- <img ng-src="./assests/images/homepage1.png" id="homepage-chat" alt="home page chat box" ng-hide="isClicked"> -->
+          <div ng-hide="isClicked">
+            <img ng-src="./assests/images/chat_bubble.png" id="homepage-chat" class="chatBox" alt="home page chat box"  >
+            <p id="textInChat" class="textHome">Hey, look! We have a <br> visitor!</p>
+          </div>
+          <div class="previousChat" ng-show="isClicked">
+            <img ng-src="./assests/images/chat_bubble.png" id="homepage-chat" class="chatBox" alt="home page chat box"  >
+            <p id="textInChat" class="textHome">Welcome to our carnival! <br> May I know your name?</p>
+          </div>
+          <!-- <img ng-src="./assests/images/chat_welcome1.png" id="homepage-chat" class="previousChat" alt="home page chat box" ng-show="isClicked"> -->
           <div class="nextChat" style="display:none;">
             <img ng-src="./assests/images/chat_bubble.png" id="homepage-chat" class="chatBox" alt="home page chat box"  >
-            <p id="textInChat">Hi,{{Data}}!Can you help us <br> with the preparations for <br> the carnival?</p>
+            <p id="textInChat" class="textHome">Hi, {{Data | capitalize}}! Can you help us <br> with the preparations for <br> the carnival?</p>
           </div>
         </div>
         <div id="input_container"  style="display:none;">

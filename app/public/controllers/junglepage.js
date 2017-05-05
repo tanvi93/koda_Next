@@ -21,10 +21,23 @@ app.controller('junglepageCtrl',function ($scope,$state,$http,$rootScope) {
             data:info,
             headers:{'content-Type' : 'application/json'}
         }).then(function(success){
-            console.log("login successful");
-            window.localStorage['name'] = info.Name;
+            console.log("from backend",success);
+            // window.localStorage['name'] = info.Name;
+console.log(success.data.data.Name);
+
+            window.localStorage['name'] = success.data.data.Name;
     $rootScope.Data = window.localStorage['name'];
 
+var nameLength =  success.data.data.Name.length;
+console.log(nameLength);
+// if(nameLength > 20) {
+//         $('#textInChat').css('font-size', '10px');
+//     } else if(nameLength > 10) {
+//         $('#textInChat').css('font-size', '20px');
+//     } else if(nameLength > 5) {
+//         $('#textInChat').css('font-size', '30px');
+//         console.log("size perfect");
+//     }
     $scope.clicked =true;
     $('.previousChat,#input_container').hide();
     $('.nextChat,.button').show();

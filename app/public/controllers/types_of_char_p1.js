@@ -3,7 +3,7 @@ app.controller('typesOfCharp1Ctrl', function($scope) {
 
     setTimeout(function() {
         $('#activityHolder,#circle_giff,#circle_star,#Holder,#speechBubblechat,#back_button,#next_button').show();
-    }, 2000);
+    }, 1400);
 
 
     setTimeout(function() {

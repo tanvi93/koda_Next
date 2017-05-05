@@ -1,5 +1,9 @@
 app.controller('game2elementsCtrl', function($scope,$state) {
 $('.disabled').prop('disabled',true);
+  $('#display,#back_button,#next_button').css('filter','blur(5px)');
+setTimeout(function(){
+  $('#display,#back_button,#next_button').css('filter','blur(0px)')
+},2500)
 
 $scope.moveCap = function() {
       $scope.isCap = true;

@@ -1,15 +1,15 @@
 <div id="mainRow" style="background-image:url('./assests/images/backimg.png'); ">
-  <nav class="navbar" style="background-color:rgba(207, 241, 14, 1); height:100px;">
+  <nav ng-show="isclicked" class="navbar" style="border:transparent; height:100px;"></nav>
+  <nav ng-hide="isclicked" class="navbar" style="background-color:rgba(207, 241, 14, 1); height:100px;">
     <div class="navbarText">
-<h3 ng-hide="isclicked" ng-show="back"  style="font-family:Julee;font-weight:bold"><b>On the left are the steps for building the Monkey game, but in a jumbled order.</b></h3>
-<p ng-hide="isclicked" ng-show="back"  style="font-family:Julee; font-weight:700; ">Drag and drop them in the centre in the correct sequence.</p>
-<p ng-show="isclicked"  ng-hide="back"  style="font-family:Julee; font-weight:700; margin-top:30px; ">Treasure Hunt! Find the various elements of Monkey Menace based on the giraffe's instructions.</p>
+<h3  ng-show="back"  style="font-family:Julee;font-weight:bold"><b>On the left are the steps for building the Monkey game, but in a jumbled order.</b></h3>
+<p  ng-show="back"  style="font-family:Julee; font-weight:700; ">Drag and drop them in the centre in the correct sequence.</p>
     </div>
 </nav>
-    <div class="row">
+    <div class="row" id="display">
       <div class="col-lg-3">
 <div class="boxOfRules" ng-drop="true" ng-drop-success="onDropCompleteInList($data,$event)" ng-hide="isclicked" ng-show="back">
-  <ul class="draggable-objects" ng-repeat="obj in algorithm" style="margin-top:30px; list-style-type: none;">
+  <ul class="draggable-objects" ng-repeat="obj in algorithm track by $index" style="margin-top:30px; list-style-type: none;">
     <li>
      <img  ng-drag="true" ng-drag-data="obj" data-allow-transform="true" ng-drag-success="onDragCompleteInList($data,$event)" src={{obj.rule}}></li><br>
   </ul>
@@ -42,7 +42,7 @@
       <div class="col-lg-3"  style="margin-top:-10px; text-align:right; margin-left:-50px;">
         <div class="alert" style="display:none;"><img src="./assests/images/warning_img.png"></div>
         <div class="alertbox" style="display:none;"><img src="./assests/images/warning_img2.png"></div>
-        <div class="row"><img id="speechBubblechat" src="./assests/images/chat_rules.png" alt="" ng-show="isclicked" ng-hide="back"></div>
+        <div class="row"><img id="speechBubblechat" src="./assests/images/chat_game2algorithm.png" alt="" ng-show="isclicked" ng-hide="back"></div>
         <div class="row"><img id="giffimg" style="margin-top:-20px;" src="./assests/images/giraffe.png" alt="image" ng-show="isclicked" ng-hide="back"></div>
       </div>
     </div>

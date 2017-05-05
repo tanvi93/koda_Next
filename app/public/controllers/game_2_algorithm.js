@@ -8,6 +8,10 @@
  */
 
 app.controller('game2algorithmCtrl', function($scope, $state) {
+  $('#display,#back_button,#next_button').css('filter','blur(5px)');
+setTimeout(function(){
+  $('#display,#back_button,#next_button').css('filter','blur(0px)')
+},2500)
     $scope.isclicked = false;
     $scope.back = false;
     /**
@@ -22,12 +26,33 @@ app.controller('game2algorithmCtrl', function($scope, $state) {
       console.log("hii");
         $scope.back = true;
           $scope.isclicked = false;
-
     }
     $scope.back1= function() {
       console.log("hii");
         $scope.back = true;
           $scope.isclicked = false;
+          $scope.droppedObjects1 = [];
+              console.log($scope.droppedObjects1);
+              $scope.droppedObjects2 = [];
+              $scope.droppedObjects3 = [];
+              $scope.droppedObjects4 = [];
+              $scope.droppedObjects5 = [];
+              $scope.algorithm = [{
+                      rule: "./assests/images/giffrule1.png"
+                  },
+                  {
+                      rule: "./assests/images/giffrule2.png"
+                  },
+                  {
+                      rule: "./assests/images/giffrule3.png"
+                  },
+                  {
+                      rule: "./assests/images/giffrule4.png"
+                  },
+                  {
+                      rule: "./assests/images/giffrule5.png"
+                  }
+              ];
 
     }
     /**
@@ -70,6 +95,7 @@ app.controller('game2algorithmCtrl', function($scope, $state) {
             rule: "./assests/images/giffrule3.png"
         }
     ];
+
     /**
      * @param {object} droppedObjects Multiple objects to store the steps dropped.
      *
@@ -186,11 +212,15 @@ app.controller('game2algorithmCtrl', function($scope, $state) {
      *  store index of that step fron algorithm array in variable index
      * and using splice method remove it from the object.
      */
+  var index;
     $scope.onDragCompleteInList = function(data, evt) {
-        var index = $scope.algorithm.indexOf(data);
+      index = $scope.algorithm.indexOf(data);
+        console.log(index);
         if (index > -1) {
-            $scope.algorithm.splice(index, 1);
+            $scope.algorithm.splice(index, 1,null);
+            console.log($scope.algorithm);
         }
+
     }
     /**
      * @ngdoc method
@@ -202,8 +232,15 @@ app.controller('game2algorithmCtrl', function($scope, $state) {
      * then puch the value in same object using push method
      */
     $scope.onDropCompleteInList = function(data, evt) {
-        var index = $scope.algorithm.indexOf(data);
-        $scope.algorithm.push(data);
+      console.log(data);
+        // $scope.algorithm.push(data);
+        for (var i = 0; i < $scope.algorithm.length; i++) {
+    if ($scope.algorithm[i] == null) {
+      $scope.algorithm.splice(i, 1,data);
+      break;
+    }
+  }
+
     }
     /**
      * @ngdoc method
@@ -221,10 +258,10 @@ app.controller('game2algorithmCtrl', function($scope, $state) {
             $('.alert').hide();
         }, 2000);
         if ($scope.correctSequence[0].rule == $scope.droppedObjects1[0].rule) {
-            if ($scope.correctSequence[1].rule == $scope.droppedObjects2[0].rule) {
-                if ($scope.correctSequence[2].rule == $scope.droppedObjects3[0].rule) {
-                    if ($scope.correctSequence[3].rule == $scope.droppedObjects4[0].rule) {
-                        if ($scope.correctSequence[4].rule == $scope.droppedObjects5[0].rule) {
+            if ($scope.correctSequence[1].rule == $scope.droppedObjects2[0].rule || $scope.correctSequence[2].rule == $scope.droppedObjects2[0].rule ) {
+                if ($scope.correctSequence[2].rule == $scope.droppedObjects3[0].rule || $scope.correctSequence[1].rule == $scope.droppedObjects3[0].rule) {
+                    if ($scope.correctSequence[3].rule == $scope.droppedObjects4[0].rule || $scope.correctSequence[4].rule == $scope.droppedObjects4[0].rule) {
+                        if ($scope.correctSequence[4].rule == $scope.droppedObjects5[0].rule || $scope.correctSequence[3].rule == $scope.droppedObjects5[0].rule) {
                             $scope.isclicked = true;
                             console.log(  $scope.isclicked );
                             console.log("success");

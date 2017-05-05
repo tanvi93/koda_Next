@@ -8,41 +8,41 @@ app.controller('flipeffectCtrl', function($scope,$rootScope,progressService,$sta
             width: 500,
             height: 250,
             closed: true,
-            delay: 250,
-            speed: 80,
+            delay: 400,
+            speed: 120,
             auto: true,
-            pause: '#pause',
-            play: '#play_button',
+            // pause: '#pause',
+            // play: '#play_button',
             pageNumbers: false,
              pagePadding: 0
 
         })
-        setTimeout(function() {
-            $('#pause').click();
-
-        }, 2000);
+        // setTimeout(function() {
+        //     $('#pause').click();
+        //
+        // }, 2000);
     });
 
-    $scope.play = function() {
-        $('#mybook').booklet({
-             pagePadding: 0,
-            width: 500,
-            height: 250,
-            closed: true,
-            delay: 250,
-            speed: 80,
-            auto: true,
-            pause: '#pause',
-            play: '#playButton',
-            pageNumbers: false
-
-        })
-        setTimeout(function() {
-            $('#pause').click();
-
-        },2000);
-
-    }
+    // $scope.play = function() {
+    //     $('#mybook').booklet({
+    //          pagePadding: 0,
+    //         width: 500,
+    //         height: 250,
+    //         closed: true,
+    //         delay: 250,
+    //         speed: 80,
+    //         auto: true,
+    //         pause: '#pause',
+    //         play: '#playButton',
+    //         pageNumbers: false
+    //
+    //     })
+    //     setTimeout(function() {
+    //         $('#pause').click();
+    //
+    //     },2000);
+    //
+    // }
 
 $scope.clicked=function (){
   $state.go('ninjaBadge');

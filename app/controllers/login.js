@@ -20,6 +20,7 @@ router.post('/login', function(req, res) {
         console.log(data);
     var loginDetail=com.save(data,function (err,detail) {
       console.log("hello");
+      console.log("data",detail);
       if(err){
         if(typeof err === "object"){
                   var field = err.message.split('.$')[0];
@@ -32,10 +33,13 @@ router.post('/login', function(req, res) {
                 }
       }
       else{
+        // res.json(detail);
         res.json({
+          "data":detail,
           "status":true,
           "message":"logined Successfully"
         });
+
       }
     });
   } catch (e) {
