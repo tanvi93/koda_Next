@@ -44,8 +44,8 @@ $stateProvider
 })
     .state("learndance", {
        url: '/learndance',
-        templateUrl : './templates/dancinganimals.html',
-        controller: 'dancinganimalsController'
+        templateUrl : './templates/lion_dance_goal.html',
+        controller: 'lionDanceGoalCtrl'
     })
 
     .state("flipbook", {

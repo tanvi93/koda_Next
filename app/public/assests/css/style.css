@@ -1,3 +1,6 @@
+html {
+    height: 100%
+}
 
 body{
   overflow:hidden;
@@ -56,8 +59,8 @@ font-size: 24px;
 .inputBox{
   width: 423px;
 height: 64px;
-margin-left: 550px;
-margin-top: 120px;
+margin-left: 580px;
+margin-top: 200px;
 font-size:28px;
 font-family: "Julee";
 position: relative;
@@ -98,10 +101,11 @@ z-index: 3;
 #leaf_img{
   width: 679px;
   height: 304px;
-  margin-left: 420px;
+  margin-left: 480px;
   position: absolute;
   z-index: 1;
   opacity: 0.85;
+  margin-top: 90px;
 }
 
 #inputError{
@@ -164,6 +168,7 @@ z-index: 3;
   display: inline-flex;
   margin-left: 62%;
   margin-top: 1%;
+
 }
 #kidName {
   font-family: 'Julee';
@@ -188,7 +193,7 @@ z-index: 3;
     width: 50px;
 }
 .movingLion{
-  margin-top:430px;
+  margin-top:460px;
     animation:  moveLion 1s forwards;
 
 }
@@ -201,6 +206,7 @@ z-index: 3;
 }
 
 /*css for progress bar*/
+
 #myProgress {
   width: 200px;
   background-color: #ddd;
@@ -235,7 +241,7 @@ z-index: 3;
 #rowforLion{
   margin-top:10px;
   float:right;
-   padding-right:30px;
+   padding-right:20px;
 }
 
 .flipbookLion{
@@ -896,7 +902,7 @@ body{
   height: 270px;
   position: relative;
   left: 250px;
-  top: 170px;
+  top: 80px;
   z-index: 1;
 
 }
@@ -941,7 +947,28 @@ height: 170px;
         font-size: 25px;
         -webkit-animation: para1 5s;
     }
-
+    #heading3 {
+        position: relative;
+        left:10px;
+        top: 90px;
+        font-family: 'Julee';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 25px;
+        -webkit-animation: para1 6s;
+        text-align: center;
+    }
+    #heading4 {
+        position: relative;
+        left:20px;
+        top: 90px;
+        font-family: 'Julee';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 25px;
+        -webkit-animation: para1 11s;
+        text-align: center;
+    }
     #rules2 {
       width: 423px;
 height: 170px;
@@ -1053,7 +1080,7 @@ height: 254px;
     #para1 {
       width:400px;
         position: relative;
-        left: 30px;
+        left: 20px;
         top: 40px;
         font-family: 'Julee';
         font-weight: 700;
@@ -1081,13 +1108,14 @@ height: 254px;
     #para2 {
       width:600px;
         position: relative;
-        left: 20px;
-        top: 20px;
+        left:-120px;
+        top: 30px;
         font-family: 'Julee';
         font-weight: 700;
         font-style: normal;
         font-size: 25px;
         -webkit-animation: para1 10s;
+        text-align: center;
     }
     @keyframes text {
         0% {
@@ -1121,7 +1149,7 @@ height: 254px;
     #para3 {
       width:400px;
         position: relative;
-        left: 380px;
+        left: 350px;
         top: 40px;
         font-family: 'Julee';
         font-weight: 700;
@@ -1132,13 +1160,14 @@ height: 254px;
     #para4 {
       width:600px;
         position: relative;
-        left: 380px;
-        top: 20px;
+        left: 200px;
+        top: 30px;
         font-family: 'Julee';
         font-weight: 700;
         font-style: normal;
         font-size: 25px;
         -webkit-animation: para1 15s;
+        text-align: center;
     }
 
 
@@ -2006,8 +2035,45 @@ height: 692px;
   }
 }
 
-#error_msg_on_apple{
+#errorMsgApple{
   margin-top: -380px;
   margin-left: 500px;
+  position: fixed;
+}
+
+#errorMsgMonkey{
+  margin-top: -570px;
+  margin-left: 560px;
+  position: fixed;
+}
+#errorMsgBg{
+  margin-top: -670px;
+  margin-left:730px;
+  position: fixed;
+}
+#errorMsgRule1{
+  /*margin-top: -670px;*/
+  margin-left:270px;
+  position: fixed;
+}
+#errorMsgRule2,#errorMsg2{
+  margin-top: -8px;
+  margin-left:270px;
+  position: fixed;
+}
+#errorMsgRule4,#errorMsg4{
+  margin-top: -8px;
+  margin-left:270px;
+  position: fixed;
+}
+#errorMsgRule5,#errorMsg5{
+  margin-top: -8px;
+  margin-left:270px;
+  position: fixed;
+}
+
+#errorMsgCap{
+  margin-top: -160px;
+  margin-left:710px;
   position: fixed;
 }

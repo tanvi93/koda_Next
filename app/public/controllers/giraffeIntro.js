@@ -3,5 +3,5 @@ app.controller('giraffeIntroCtrl',function () {
             setTimeout(function(){
               $('#giraffe-intro-chat').fadeIn(500);
             }, 3000);
-            
+  });          
 });

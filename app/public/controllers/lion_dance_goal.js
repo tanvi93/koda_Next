@@ -1,4 +1,4 @@
-app.controller('dancinganimalsController',function($rootScope,$scope,progressService){
+app.controller('lionDanceGoalCtrl',function($rootScope,$scope,progressService){
 
   $(document).ready(function () {
 
