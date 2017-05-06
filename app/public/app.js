@@ -161,6 +161,11 @@ $stateProvider
       templateUrl : './templates/algorithm.html',
       controller: 'algorithmCtrl'
   })
+  .state("postAlgo",{
+    url:'/postAlgo',
+    templateUrl:'./templates/postAlgo.html',
+    controller:'postAlgoCtrl'
+  })
   .state("giraffePlay",{
     url:'/giraffePlay',
     templateUrl:'./templates/giraffePlay.html',
@@ -186,9 +191,9 @@ $stateProvider
       templateUrl : './templates/game_2_algorithm.html',
       controller: 'game2algorithmCtrl'
   })
-  .state("giraffeGameIntro", {
-     url: '/giraffeGameIntro',
-      templateUrl : './templates/giraffeGameIntro.html',
-      controller: 'giraffeGameIntroCtrl'
-  });
+  // .state("giraffeGameIntro", {
+  //    url: '/giraffeGameIntro',
+  //     templateUrl : './templates/giraffeGameIntro.html',
+  //     controller: 'giraffeGameIntroCtrl'
+  // });
 });
