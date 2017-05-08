@@ -12,12 +12,12 @@
           <!-- <img ng-src="./assests/images/chat_welcome1.png" id="homepage-chat" class="previousChat" alt="home page chat box" ng-show="isClicked"> -->
           <div class="nextChat" style="display:none;">
             <img ng-src="./assests/images/chat_bubble.png" id="homepage-chat" class="chatBox" alt="home page chat box"  >
-            <p id="textInChat" class="textHome">Hi, {{Data | capitalize}}! Can you help us <br> with the preparations for <br> the carnival?</p>
+            <p id="textInChat" class="textHome">Hi, {{Data | capitalize}}! Can you help us with the preparations for the carnival?</p>
           </div>
         </div>
         <div id="input_container"  style="display:none;">
           <img id="leaf_img"  src="./assests/images/leaf.png" alt="" />
-    <input type="text" class="inputBox" ng-model="Name" name="firstName" id="Name" placeholder="Enter your name here" required />
+    <input type="text" class="inputBox" ng-model="Name" name="firstName" id="Name" placeholder="Enter your name here" required  />
     <img src="./assests/images/arrow_button.png" id="input_img" ng-click="welcome()">
     <img id="inputError" src="./assests/images/input_error.png" style="display:none;" alt="" />
 </div>

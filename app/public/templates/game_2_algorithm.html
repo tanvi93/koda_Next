@@ -2,8 +2,14 @@
   <nav ng-show="isclicked" class="navbar" style="border:transparent; height:100px;"></nav>
   <nav ng-hide="isclicked" class="navbar" style="background-color:rgba(207, 241, 14, 1); height:100px;">
     <div class="navbarText">
-<h3  ng-show="back"  style="font-family:Julee;font-weight:bold"><b>On the left are the steps for building the Monkey game, but in a jumbled order.</b></h3>
-<p  ng-show="back"  style="font-family:Julee; font-weight:700; ">Drag and drop them in the centre in the correct sequence.</p>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-left:120px;">
+        <img src="./assests/images/giraffe - face.png" alt="" style=" margin-top:10px;  width: 106px; height: 83px;"/>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left:-450px;">
+        <h3  ng-show="back"  style="font-family:Julee;font-weight:bold"><b>On the left are the steps for building the Monkey game, but in a jumbled order.</b></h3>
+        <p  ng-show="back"  style="font-family:Julee; font-weight:700; ">Drag and drop them in the centre in the correct sequence.</p>
+      </div>
+
     </div>
 </nav>
     <div class="row" id="display">
@@ -15,7 +21,7 @@
   </ul>
 </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 <div class="boxForCorrectRules"  >
       <div style="margin-top:40px; margin-left:60px;" >
         <img  ng-drop="true" ng-drop-success="onDropComplete1($data,$event)"  src="./assests/images/rulebox1.png" alt="image" style=" position:relative; display:inline-block;">
@@ -39,7 +45,7 @@
       </div>
   </div>
 </div>
-      <div class="col-lg-3"  style="margin-top:-10px; text-align:right; margin-left:-50px;">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"  style="margin-top:-10px; text-align:right; margin-left:-50px;">
         <div class="alert" style="display:none;"><img src="./assests/images/warning_img.png"></div>
         <div class="alertbox" style="display:none;"><img src="./assests/images/warning_img2.png"></div>
         <div class="row"><img id="speechBubblechat" src="./assests/images/chat_game2algorithm.png" alt="" ng-show="isclicked" ng-hide="back"></div>
@@ -50,5 +56,5 @@
     <button id="back_button"  type="button" name="button" ng-click="back()" ng-show="isclicked" ng-hide="back">BACK</button>
     <button id="back_button"  type="button" name="button" ng-click="back1()" ng-show="isclicked" ng-hide="back">BACK</button>
     <button id="next_button" style="width:300px;" class="button" type="button" name="button" ng-click="clicked()" ng-hide="isclicked" ng-show="back">CHECK YOUR ANSWER</button>
-    <button id="next_button"  type="button" name="button" ng-show="isclicked" ng-hide="back">NEXT</button>
+    <button id="next_button"  type="button" name="button" ng-show="isclicked" ng-hide="back" ui-sref="thanksNote">NEXT</button>
   </div>

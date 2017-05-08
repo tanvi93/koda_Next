@@ -7,7 +7,9 @@
  * into correct box and validating it.
  */
 
-app.controller('game2algorithmCtrl', function($scope, $state) {
+app.controller('game2algorithmCtrl', function($scope, $state,$rootScope,progressBarForGiff) {
+  $("#myProgress,#myBar").show();
+  $rootScope.progress= progressBarForGiff.game2algorithm;
   $('#display,#back_button,#next_button').css('filter','blur(5px)');
 setTimeout(function(){
   $('#display,#back_button,#next_button').css('filter','blur(0px)')

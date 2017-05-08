@@ -31,20 +31,34 @@ Name.addEventListener("keydown", function (name) {
             console.log("from backend",success);
             // window.localStorage['name'] = info.Name;
 console.log(success.data.data.Name);
+var name =success.data.data.Name;
+var firstName = name.slice(0, name.indexOf(" "));
+console.log("name",firstName);
+    //         window.localStorage['name'] = success.data.data.Name;
+    // $rootScope.Data = window.localStorage['name'];
 
-            window.localStorage['name'] = success.data.data.Name;
-    $rootScope.Data = window.localStorage['name'];
-
-var nameLength =  success.data.data.Name.length;
+var nameLength =  firstName.length;
 console.log(nameLength);
-// if(nameLength > 20) {
-//         $('#textInChat').css('font-size', '10px');
-//     } else if(nameLength > 10) {
-//         $('#textInChat').css('font-size', '20px');
-//     } else if(nameLength > 5) {
-//         $('#textInChat').css('font-size', '30px');
-//         console.log("size perfect");
-//     }
+if(nameLength > 20) {
+        $('.textHome').css('font-size', '23px');
+            window.localStorage['name']=firstName;
+            $rootScope.Data = window.localStorage['name'];
+    } else if(nameLength > 10) {
+      console.log("size greater than 10");
+        $('.textHome').css('font-size', '25px');
+        window.localStorage['name']=firstName;
+        $rootScope.Data = window.localStorage['name'];
+    } else if(nameLength > 5) {
+        $('.textHome').css('font-size', '27px');
+        console.log("size perfect");
+        window.localStorage['name']=firstName;
+        $rootScope.Data = window.localStorage['name'];
+    }else if(nameLength <= 5) {
+        $('.textHome').css('font-size', '30px');
+        console.log("size perfect");
+        window.localStorage['name']=firstName;
+        $rootScope.Data = window.localStorage['name'];
+    }
     $scope.clicked =true;
     $('.previousChat,#input_container').hide();
     $('.nextChat,.button').show();

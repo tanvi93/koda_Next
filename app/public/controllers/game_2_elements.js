@@ -1,4 +1,6 @@
-app.controller('game2elementsCtrl', function($scope,$state) {
+app.controller('game2elementsCtrl', function($scope,$state,$rootScope,progressBarForGiff) {
+  $("#myProgress,#myBar").show();
+  $rootScope.progress= progressBarForGiff.game2elements;
 $('.disabled').prop('disabled',true);
   $('#next_button').css('animation','none');
   $('#display,.button,.disabled').css('filter','blur(5px)');
@@ -22,12 +24,20 @@ $scope.moveCap = function() {
          }
     }
 
-
+$scope.countApple = 0;
 $scope.moveApple = function() {
     if($scope.isCap ){
      $scope.isApple = true;
        $('#apple').css("opacity", "0.5");
        $('#applePlaced').show();
+       $scope.countApple++;
+       if($scope.countApple>1){
+         $('#errorMsgCap').show();
+            $('#errorMsgCap').css({'margin-top':'-410px','margin-left':'530px'});
+         setTimeout(function(){
+           $('#errorMsgCap').hide();
+         },1000);
+       }
      }else{
        $('#errorMsgApple').show();
        setTimeout(function(){
@@ -35,13 +45,21 @@ $scope.moveApple = function() {
        },1000);
      }
    }
-
+$scope.countMonkey = 0;
    $scope.moveMonkey = function() {
        if($scope.isCap ){
     $scope.isMonkey = true;
       $('#monkey').css("opacity", "0.5");
       $('.cap').hide();
       $('#monkeyPlaced').show();
+      $scope.countMonkey++;
+      if($scope.countMonkey>1){
+        $('#errorMsgCap').show();
+        $('#errorMsgCap').css({'margin-top':'-610px','margin-left':'560px'});
+        setTimeout(function(){
+          $('#errorMsgCap').hide();
+        },1000);
+      }
     }else{
       $('#errorMsgMonkey').show();
       setTimeout(function(){

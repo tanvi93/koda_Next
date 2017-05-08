@@ -1,4 +1,6 @@
-app.controller('typesOfCharp1Ctrl', function($scope) {
+app.controller('typesOfCharp1Ctrl', function($scope,$rootScope,progressBarForGiff) {
+  $("#myProgress,#myBar").show();
+$rootScope.progress= progressBarForGiff.typesOfChar1;
   $('#next_button').prop('disabled', true);
   $('#next_button').css('animation','none');
 

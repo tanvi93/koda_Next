@@ -190,5 +190,10 @@ $stateProvider
      url: '/giraffeGameIntro',
       templateUrl : './templates/giraffeGameIntro.html',
       controller: 'giraffeGameIntroCtrl'
+  })
+  .state("thanksNote", {
+     url: '/thankyou_for_participating',
+      templateUrl : './templates/thankyou_for_participating.html',
+      controller: 'thankyouCtrl'
   });
 });

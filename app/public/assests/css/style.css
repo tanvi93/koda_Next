@@ -65,7 +65,7 @@ font-size:28px;
 font-family: "Julee";
 position: relative;
 z-index: 2;
-
+  text-transform: capitalize;
 }
 
 #input_img{
@@ -84,12 +84,13 @@ z-index: 3;
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
-
     text-align: center;
 }
 
 .textHome{
-  margin-left: 580px;
+  word-wrap: break-word;
+  width:380px;
+  margin-left: 1110px;
   margin-top: -200px;
 }
 
@@ -2096,4 +2097,25 @@ height: 692px;
   margin-top: -160px;
   margin-left:710px;
   position: fixed;
+}
+
+/*css for thank_you_for_participating*/
+#thanksPageHeading{
+  font-family: "Julee";
+  font-weight: 700;
+      font-style: normal;
+      font-size: 48px;
+      color: #4E3971;
+      text-align: center;
+      margin-top: 300px;
+}
+
+#thanksPagePara{
+  font-family: "Julee";
+  font-weight: 700;
+      font-style: normal;
+      font-size: 28px;
+      color: #4E3971;
+      text-align: center;
+        margin-top: 40px;
 }
