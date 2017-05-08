@@ -1,6 +1,13 @@
 app.controller('junglepageCtrl',function ($scope,$state,$http,$rootScope) {
   console.log("entered junglepage controller...");
   var info;
+  var Name = document.getElementById("Name");
+Name.addEventListener("keydown", function (name) {
+    if (name.keyCode === 13) {
+        $scope.welcome(name);
+    }
+});
+
   $scope.welcome = function(){
     console.log("inside submit function");
 

@@ -4,7 +4,7 @@
           <p style="font-family:Julee; font-weight:700; margin-top:30px; ">Treasure Hunt! Find the various elements of Monkey Menace based on the giraffe's instructions.</p>
       </div>
   </nav>
-    <div class="row" id="display"> 
+    <div class="row" id="display">
         <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
             <div class="gameElement">
                 <p id="gameElementHeading">Game Elements</p>
@@ -39,17 +39,27 @@
         <div id="treasureHunt" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" >
             <div  ng-hide="isBg" >
                 <img class="bgforGame2" src="./assests/images/jungleBG.png" ng-click="moveBg()" alt="">
+                  <div  id="errorMsgBg" style="display:none;"><img src="./assests/images/error_bg.png"></div>
                 <img src="./assests/images/monkey.png" id="monkey" ng-click="moveMonkey()" style="margin-top:-1080px; margin-left:440px;" alt="">
+                <div  id="errorMsgMonkey" style="display:none;"><img src="./assests/images/error_monkey.png"></div>
                 <img src="./assests/images/apple.png" id="apple" ng-click="moveApple()" style="margin-top:-680px; margin-left:470px;" alt="">
-                <div  id="error_msg_on_apple" style="display:none;"><img src="./assests/images/error_msg_on_apple.png"></div>
+                <div  id="errorMsgApple" style="display:none;"><img src="./assests/images/error_apple.png"></div>
                 <img src="./assests/images/cap.png" id="cap" ng-click="moveCap()" style="width: 130px; height: 66px; margin-top:-240px; margin-left:580px;" alt="">
+                  <div  id="errorMsgCap" style="display:none;"><img src="./assests/images/error_cap.png"></div>
             </div>
             <div ng-show="isBg" id="rulesOfgame2element">
-              <p class="ruleContainer" id="gameOverRule" ng-click="gameOverRule()">5 fruits are smashed</p>
-              <p class="ruleContainer">Monkey has thrown 5 fruits</p>
+              <div  id="errorMsgRule1" style="display:none;"><img src="./assests/images/error_rule1.png"></div>
+              <p class="ruleContainer"  id="gameOverRule" ng-click="gameOverRule()">5 fruits are smashed</p>
+              <div  id="errorMsgRule2"  style="display:none;"><img src="./assests/images/error_rule2.png" ></div>
+              <div  id="errorMsg2"  style="display:none;"><img src="./assests/images/error2_rule.png" ></div>
+              <p class="ruleContainer" ng-click="rule2()">Monkey has thrown 5 fruits</p>
               <p class="ruleContainer" id="scoringRule" ng-click="scoringRule()">10 points for catching a fruit in the hat</p>
-              <p class="ruleContainer">10 points when monkey throws a fruit</p>
-              <p class="ruleContainer">No fruits are smashed</p>
+              <div  id="errorMsgRule4" style="display:none;"><img src="./assests/images/error_rule4.png"></div>
+                <div  id="errorMsg4" style="display:none;"><img src="./assests/images/error4_rule.png"></div>
+              <p class="ruleContainer" ng-click="rule4()">10 points when monkey throws a fruit</p>
+              <div  id="errorMsgRule5" style="display:none;"><img src="./assests/images/error_rule5.png"></div>
+             <div  id="errorMsg5" style="display:none;"><img src="./assests/images/error5_rule.png"></div>
+              <p class="ruleContainer" ng-click="rule5()">No fruits are smashed</p>
             </div>
         </div>
         <div  class="col-lg-3 col-md-3 col-xs-3 col-sm-3" style="margin-top:-10px; text-align:right; margin-left:-30px;" >
