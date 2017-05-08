@@ -161,6 +161,11 @@ $stateProvider
       templateUrl : './templates/algorithm.html',
       controller: 'algorithmCtrl'
   })
+  .state("postAlgo",{
+    url:'/postAlgo',
+    templateUrl:'./templates/postAlgo.html',
+    controller:'postAlgoCtrl'
+  })
   .state("giraffePlay",{
     url:'/giraffePlay',
     templateUrl:'./templates/giraffePlay.html',
@@ -186,14 +191,20 @@ $stateProvider
       templateUrl : './templates/game_2_algorithm.html',
       controller: 'game2algorithmCtrl'
   })
-  .state("giraffeGameIntro", {
-     url: '/giraffeGameIntro',
-      templateUrl : './templates/giraffeGameIntro.html',
-      controller: 'giraffeGameIntroCtrl'
+  .state("giraffeBadge",{
+    url:'/giraffeBadge',
+    templateUrl:'./templates/giraffeBadge.html',
+    controller:'giraffeBadgeCtrl'
   })
   .state("thanksNote", {
      url: '/thankyou_for_participating',
       templateUrl : './templates/thankyou_for_participating.html',
       controller: 'thankyouCtrl'
   });
+  // .state("giraffeGameIntro", {
+  //    url: '/giraffeGameIntro',
+  //     templateUrl : './templates/giraffeGameIntro.html',
+  //     controller: 'giraffeGameIntroCtrl'
+  // });
+
 });

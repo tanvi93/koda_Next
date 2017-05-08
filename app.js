@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static('app/public'));
 app.use(require('./app/controllers'));
 
-var port = 3000;
+var port = 3000; 
 app.listen(port, function() {
     db.connect();
     console.log('listening on port 3000');

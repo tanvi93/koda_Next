@@ -110,7 +110,7 @@ z-index: 3;
 }
 
 #inputError{
-  width: 250px;
+  width: 250px;postAlgo
   height: 60px;
   margin-top: 120px;
   margin-left: -250px;
@@ -888,6 +888,8 @@ body{
         position: absolute;
         top: 10px;
         left: -30px;
+  margin-top: 42%;
+}
     }
     #Holder {
         width: 463px;
@@ -1482,10 +1484,10 @@ max-height: 30%;
   border-radius: 26px;
 }
 .dashboard-Detail-Section{
-  /*float:right;*/
+  float:right;
   margin-right: 5%;
   margin-top: 4%;
-  margin-left: 238%;
+  /*margin-left: 238%;*/
 }
 .lion-dashboard-sqaure-details{
   width:260px;
@@ -2099,6 +2101,7 @@ height: 692px;
   position: fixed;
 }
 
+
 /*css for thank_you_for_participating*/
 #thanksPageHeading{
   font-family: "Julee";
@@ -2119,3 +2122,88 @@ height: 692px;
       text-align: center;
         margin-top: 40px;
 }
+
+/*giraffe Algorithm Page*/
+#algo-giraffe{
+  height:418px;
+  width:408px;
+}
+.algorithm-list{
+  width: 1015px;
+  height: 705px;
+  background-color: white;
+}
+#algo-back{
+  width:140px;
+  height:72px;
+  border:2px solid white;
+  font-family: "Julee";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.349019607843137);
+  background-color: black;
+}
+.algo-chat{
+  width:415px;
+  height:303px;
+  margin-top: 2%;
+  margin-left: 75%;
+}
+.algo-giraffe{
+  width:408px;
+  height:418px;
+  margin-left: 25%;
+  margin-top: -2%;
+}
+.algorithm-list{
+  margin-top: -33%;
+  margin-left: 20%;
+  display: none;
+}
+#algo-chat{
+  float:right;
+  margin-top: 2%;
+  display: none;
+}
+#algo-giraffe{
+  margin-top: 5%;
+  margin-left: 60%;
+}
+#algo-next{
+  width:140px;
+  height:72px;
+  border-radius: 5px;
+  border:2px solid white;
+  font-family: "Julee";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.349019607843137);
+  background-color: rgba(51, 153, 0, 1);
+  margin-left: 2%;
+}
+.algorithm-action{
+  margin-top: 1%;
+  margin-left: 40%;
+  display: none;
+}
+.algo-moveGiraffe{
+  -webkit-animation: algomymove 2s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: algomymove 2s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes algomymove {
+    from {margin-left: 0%;}
+    to {margin-left: 230%;}
+}
+
+@keyframes algomymove {
+  from {margin-left: 0%;}
+  to {margin-left: 230%;}

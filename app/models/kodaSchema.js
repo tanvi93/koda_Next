@@ -6,69 +6,337 @@ var BaseSchema = require('./abstract').BaseSchema;
 // var topic = require('./topicSchema');
 
 var kodaSchema = new BaseSchema({
-      // username:{
-      //   type:String,
-      //   unique:false,
-      //   required:false,
-      //   trim:true
-      // },
-      // userEmailAddress:{
-      //   type:String,
-      //   unique:true,
-      //   lowercase:true,
-      //   required:false,
-      //   match: new RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/),
-      //   trim:true
-      // },
-      // parentEmailAddress:{
-      //   type:String,
-      //   unique:true,
-      //   lowercase:true,
-      //   required:false,
-      //   match: new RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/),
-      //   trim:true
-      // },
-      // userPassword:{
-      //   type:String,
-      //   required:false,
-      //   match: new RegExp(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d][A-Za-z\d!@#$%^&*()_+]{7,19}$/),
-      //   trim:true
-      // },
-      // ParentPassword:{
-      //   type:String,
-      //   required:false,
-      //   match: new RegExp(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d][A-Za-z\d!@#$%^&*()_+]{7,19}$/),
-      //   trim:true
-      // },
       Name:{
        type:String,
       //  unique:true,
        required:true,
        trim:true
-     }
-    //  lastname:{
-    //    type:String,
-    //   //  unique:true,
-    //    required:true,
-    //    trim:true
-    //  }
-     //,
-    //   personalDetail:[{
-    //    birthDate:{
-    //      type:Number,
-    //      required:false,
-    //    },
-    //    location:[{
-    //      city:{
-    //        type:String,
-    //        requried:false
-    //      },
-    //      country:{
-    //        type:String,
-    //        required:false,
-    //      }
-    //  }]
-    //   }],
+     },
+     lionDance:[{
+       welcome:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       helpLion:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       learnDance:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       flipbook:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       stepShown:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       wrongMoves:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       flipeffect:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       ninjaBadge:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }]
+     }],
+     giraffeGuru:[{
+       welcomeGiraffe:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       giraffeIntro:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       giraffeIntro1:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       giraffeIntro2:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       giraffePlay:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       giraffeThnxNote:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       chartypes1:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       chartypes2:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       chartypes3:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       giraffePlayInstruction:[{
+           progress:{
+             type:Number,
+             default:0,
+             trim:true
+           },
+           visit:{
+             type:Number,
+             default:0,
+             trim:true
+           },
+           timeSpend:{
+             type:Number,
+             default:0
+           }
+       }],
+       giraffeAlgorithm:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }],
+       giraffePlay1:[{
+         progress:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         visit:{
+           type:Number,
+           default:0,
+           trim:true
+         },
+         timeSpend:{
+           type:Number,
+           default:0
+         }
+       }]
+     }]
+
       // activityZone:[{
       //   tutorial:[{
       //     lionDance:[{
@@ -162,8 +430,6 @@ var kodaSchema = new BaseSchema({
       //           default:0
       //         }
       //       }],
-      //       totalTimeSpend:rearrangeMoves.timeSpend+wrongMoves.timeSpend+flipbookExample.timeSpend+lionDance.timeSpend+helpTheLion.timespend+welcomeToShow.timespend
-      //
       //     }],
       //     guruGiraffe:[{
       //
