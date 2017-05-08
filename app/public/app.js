@@ -191,6 +191,11 @@ $stateProvider
       templateUrl : './templates/game_2_algorithm.html',
       controller: 'game2algorithmCtrl'
   })
+  .state("giraffeBadge",{
+    url:'/giraffeBadge',
+    templateUrl:'./templates/giraffeBadge.html',
+    controller:'giraffeBadgeCtrl'
+  })
   // .state("giraffeGameIntro", {
   //    url: '/giraffeGameIntro',
   //     templateUrl : './templates/giraffeGameIntro.html',
