@@ -5,7 +5,7 @@ $rootScope.progress= progressBarForGiff.typesOfChar1;
   $('#next_button').css('animation','none');
 
     setTimeout(function() {
-        $('#activityHolder,#circle_giff,#circle_star,#Holder,#speechBubblechat,#back_button,#next_button').show();
+        $('#activityHolder,#circle_giff,#circle_star,.charHolder,#speechBubblechat,#back_button,#next_button').show();
     }, 1400);
 
 
