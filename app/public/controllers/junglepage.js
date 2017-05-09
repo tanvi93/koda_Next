@@ -1,5 +1,6 @@
 app.controller('junglepageCtrl',function ($scope,$state,$http,$rootScope) {
   console.log("entered junglepage controller...");
+  $('#kidName').hide();
   var info;
   var Name = document.getElementById("Name");
 Name.addEventListener("keydown", function (name) {
@@ -19,7 +20,7 @@ Name.addEventListener("keydown", function (name) {
                 $('#inputError').show();
               setTimeout(function(){
                 $('#inputError').hide();
-              },1000)
+              },1000);
 
             }else{
           $http({

@@ -1,16 +1,17 @@
 app.controller('game2elementsCtrl', function($scope,$state,$rootScope,progressBarForGiff) {
   $("#myProgress,#myBar").show();
-  $rootScope.progress= progressBarForGiff.game2elements;
+
 $('.disabled').prop('disabled',true);
   $('#next_button').css('animation','none');
   $('#display,.button,.disabled').css('filter','blur(5px)');
 setTimeout(function(){
-  $('#display,#back_button,#next_button').css('filter','blur(0px)')
-},2500)
+  $('#display,#back_button,#next_button').css('filter','blur(0px)');
+},2500);
 
 
 $scope.count = 0;
 $scope.moveCap = function() {
+    $rootScope.progress= progressBarForGiff.game2elementsCap;
       $scope.isCap = true;
         $('#cap').css("opacity", "0.5");
         $('#capPlaced').show();
@@ -22,11 +23,12 @@ $scope.moveCap = function() {
              $('#errorMsgCap').hide();
            },1000);
          }
-    }
+    };
 
 $scope.countApple = 0;
 $scope.moveApple = function() {
     if($scope.isCap ){
+        $rootScope.progress= progressBarForGiff.game2elementsApple;
      $scope.isApple = true;
        $('#apple').css("opacity", "0.5");
        $('#applePlaced').show();
@@ -48,6 +50,7 @@ $scope.moveApple = function() {
 $scope.countMonkey = 0;
    $scope.moveMonkey = function() {
        if($scope.isCap ){
+           $rootScope.progress= progressBarForGiff.game2elementsApple;
     $scope.isMonkey = true;
       $('#monkey').css("opacity", "0.5");
       $('.cap').hide();
@@ -69,6 +72,7 @@ $scope.countMonkey = 0;
   }
   $scope.moveBg = function() {
     if($scope.isCap  && $scope.isApple  && $scope.isCap ){
+        $rootScope.progress= progressBarForGiff.game2elementsBg;
    $scope.isBg = true;
      $('.chat_monkey').hide();
      $('#bgPlaced').show();

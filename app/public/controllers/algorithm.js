@@ -1,4 +1,6 @@
-app.controller('algorithmCtrl',function(){
+app.controller('algorithmCtrl',function($rootScope,progressBarForGiff){
+  $("#myProgress,#myBar,#giffHead").show();
+$rootScope.progress= progressBarForGiff.algorithm;
   setTimeout(function() {
       $('#algo-chat').show();
   }, 3000);

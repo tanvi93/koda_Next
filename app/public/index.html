@@ -5,7 +5,7 @@
     <title>Learn Coding</title>
     <link href="./assests/css/style.css" rel="stylesheet">
     <link href="./assests/css/style1.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
+    <link href="http://fonts.googleapis.com/css?family=Julee" rel="stylesheet">
     <link rel="stylesheet" href=".\node_modules\bootstrap\dist\css\bootstrap.min.css">
     <script src=".\node_modules\angular\angular.min.js"></script>
     <script src="https://rawgit.com/fatlinesofcode/ngDraggable/master/ngDraggable.js"></script>
@@ -29,20 +29,21 @@
               <li><a ui-sref="lionDanceDashboard" id="appName">Koda</a></li>
           </ul>
       </div>
-          <div class="mascotHead">
-              <li>
-                <img src="./assests/images/giraffeHead.png" alt="giraffe head image"/>
-                <img src="./assests/images/lionHead.png" alt="lion head image" />
-              </li>
-        </div>
+
       <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li class="mascot">
+              <img id="lionHead" style="display:none;" src="./assests/images/lionHead.png" alt="lion head image" />
+            </li>
+            <li class="mascot">
+              <img id="giffHead" style="display:none;" src="./assests/images/giraffeHead.png" alt="giraffe head image"/>
+            </li>
             <li id="myProgress">
               <div id="myBar"  style="width:{{progress}}%;"></div>
             </li>
             <!-- <li id="myProgress"><div id="myBar" ng-model="progress" ng-show="progress='undefined'" style="width:{{progress}}%"></div></li> -->
               <!-- <li><a href="#"><span  class="glyphicon glyphicon-triangle-bottom"></span> </a></li> -->
-              <li style="margin-top:-40px"><a href="#" id="kidName">{{Data | capitalize}}</a></li>
+              <li ><a href="#" id="kidName">{{Data | capitalize}}</a></li>
               <!-- <li><img id="kidImg" src="./assests/images/img.png" alt=""></li> -->
           </ul>
       </div>

@@ -1,6 +1,7 @@
 app.controller('helpLionCtrl',function ($scope,$state,$rootScope,progressService) {
   console.log("entered lionIntro controller...");
-    $("#myProgress,#myBar").show();
+  // $scope.mascotImg="  assests/images/lionHead.png";
+    $("#myProgress,#myBar,#lionHead,#kidName").show();
 $rootScope.progress= progressService.helpLion;
 
 // console.log($scope.progress);

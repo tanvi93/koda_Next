@@ -12,8 +12,8 @@ app.controller('game2algorithmCtrl', function($scope, $state,$rootScope,progress
   $rootScope.progress= progressBarForGiff.game2algorithm;
   $('#display,#back_button,#next_button').css('filter','blur(5px)');
 setTimeout(function(){
-  $('#display,#back_button,#next_button').css('filter','blur(0px)')
-},2500)
+  $('#display,#back_button,#next_button').css('filter','blur(0px)');
+},2500);
     $scope.isclicked = false;
     $scope.back = false;
     /**
@@ -28,7 +28,7 @@ setTimeout(function(){
       console.log("hii");
         $scope.back = true;
           $scope.isclicked = false;
-    }
+    };
     $scope.back1= function() {
       console.log("hii");
         $scope.back = true;
@@ -56,7 +56,7 @@ setTimeout(function(){
                   }
               ];
 
-    }
+    };
     /**
      * @param {object} algorithm This object contain image url of steps of images
      *
@@ -121,35 +121,34 @@ setTimeout(function(){
         if (index > -1) {
             $scope.droppedObjects1.splice(index, 1);
         }
-    }
-
+    };
     $scope.onDragComplete2 = function(data, evt) {
         var index = $scope.droppedObjects2.indexOf(data);
         if (index > -1) {
             $scope.droppedObjects2.splice(index, 1);
         }
-    }
+    };
 
     $scope.onDragComplete3 = function(data, evt) {
         var index = $scope.droppedObjects3.indexOf(data);
         if (index > -1) {
             $scope.droppedObjects3.splice(index, 1);
         }
-    }
+    };
 
     $scope.onDragComplete4 = function(data, evt) {
         var index = $scope.droppedObjects4.indexOf(data);
         if (index > -1) {
             $scope.droppedObjects4.splice(index, 1);
         }
-    }
+    };
 
     $scope.onDragComplete5 = function(data, evt) {
         var index = $scope.droppedObjects5.indexOf(data);
         if (index > -1) {
             $scope.droppedObjects5.splice(index, 1);
         }
-    }
+    };
     /**
      * @ngdoc method
      * @name onDropComplete
@@ -168,7 +167,7 @@ setTimeout(function(){
         } else {
             $scope.algorithm.push(data);
         }
-    }
+    };
 
     $scope.onDropComplete2 = function(data, evt) {
         var index = $scope.droppedObjects2.indexOf(data);
@@ -177,7 +176,7 @@ setTimeout(function(){
         } else {
             $scope.algorithm.push(data);
         }
-    }
+    };
 
     $scope.onDropComplete3 = function(data, evt) {
         var index = $scope.droppedObjects3.indexOf(data);
@@ -186,7 +185,7 @@ setTimeout(function(){
         } else {
             $scope.algorithm.push(data);
         }
-    }
+    };
 
     $scope.onDropComplete4 = function(data, evt) {
         var index = $scope.droppedObjects4.indexOf(data);
@@ -195,7 +194,7 @@ setTimeout(function(){
         } else {
             $scope.algorithm.push(data);
         }
-    }
+    };
 
     $scope.onDropComplete5 = function(data, evt) {
         var index = $scope.droppedObjects5.indexOf(data);
@@ -204,7 +203,7 @@ setTimeout(function(){
         } else {
             $scope.algorithm.push(data);
         }
-    }
+    };
     /**
      * @ngdoc method
      * @name onDragCompleteInList
@@ -223,7 +222,7 @@ setTimeout(function(){
             console.log($scope.algorithm);
         }
 
-    }
+    };
     /**
      * @ngdoc method
      * @name onDropCompleteInList
@@ -243,7 +242,7 @@ setTimeout(function(){
     }
   }
 
-    }
+};
     /**
      * @ngdoc method
      * @name clicked
@@ -253,43 +252,34 @@ setTimeout(function(){
      * check ineach array if value is equal to in the correctSequence array
      * if true go to next page
      */
-    $scope.clicked = function() {
 
-        $('.alert').show();
-        setTimeout(function() {
-            $('.alert').hide();
-        }, 2000);
-        if ($scope.correctSequence[0].rule == $scope.droppedObjects1[0].rule) {
+$scope.clicked = function() {
+
+if($scope.droppedObjects1[0]==undefined){
+  $('.alert').show();
+  setTimeout(function() {
+      $('.alert').hide();
+  }, 2000);
+}else if ($scope.correctSequence[0].rule == $scope.droppedObjects1[0].rule) {
             if ($scope.correctSequence[1].rule == $scope.droppedObjects2[0].rule || $scope.correctSequence[2].rule == $scope.droppedObjects2[0].rule ) {
                 if ($scope.correctSequence[2].rule == $scope.droppedObjects3[0].rule || $scope.correctSequence[1].rule == $scope.droppedObjects3[0].rule) {
                     if ($scope.correctSequence[3].rule == $scope.droppedObjects4[0].rule || $scope.correctSequence[4].rule == $scope.droppedObjects4[0].rule) {
                         if ($scope.correctSequence[4].rule == $scope.droppedObjects5[0].rule || $scope.correctSequence[3].rule == $scope.droppedObjects5[0].rule) {
+  $rootScope.progress= progressBarForGiff.success;
                             $scope.isclicked = true;
                             console.log(  $scope.isclicked );
                             console.log("success");
                             $('.alert').hide();
 
-                            // $state.go('typesOfChar3');
                         }
                     }
                 }
             }
-        } else {
-
-            if ($scope.droppedObjects1[0].rule !== [] && $scope.droppedObjects2[0].rule !== [] && $scope.droppedObjects3[0].rule !== [] && $scope.droppedObjects4[0].rule !== [] && $scope.droppedObjects5[0].rule !== []) {
-  console.log($scope.droppedObjects1[0].rule !== []);
-                $('.alert').hide();
-                $('.alertbox').show();
-                setTimeout(function() {
-                    $('.alertbox').hide();
-                }, 2000);
-            } else {
-                $('.alert').show();
-                setTimeout(function() {
-                    $('.alert').hide();
-                }, 2000);
-            }
+        }else{
+            $('.alertbox').show();
+            setTimeout(function() {
+                $('.alertbox').hide();
+            }, 2000);
         }
-
-    }
+    };
 });
